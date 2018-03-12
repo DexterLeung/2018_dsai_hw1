@@ -4,13 +4,6 @@ import numpy as np
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score;
 
-LEARNING_RATE = 0.01;
-TRAIN_EPOCH = 22000;
-EXCEED_EPOCH = 3000;
-MOVING_AVERAGE_DECAY = 0.9999;
-LOG_FREQ = 100;
-VAL_FREQ = 500;
-
 def load_data(dataPath):
     ''' ### Data Read-in
         dataPath:   [str] Location of the data. Data should be in CSV Format.
